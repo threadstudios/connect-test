@@ -1,0 +1,15 @@
+
+$base-font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$text-font-family: 'Roboto', $base-font-family;
+$headings-font-family: 'Source Sans Pro', $base-font-family;
+
+@import "kube";
+
+section {
+    max-width: 60%;
+    padding: 60px;
+    margin: 0 auto;
+    @include breakpoint(sm) {
+        max-width: 100%;
+    }
+}
