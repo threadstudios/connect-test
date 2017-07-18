@@ -1,0 +1,27 @@
+.loader-svg {
+    animation: rotate 2.4s linear infinite;
+}
+
+.loader-ring {
+  stroke-dasharray: 188.19;
+  stroke-dashoffset: 156;
+  animation: dash 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 168;
+  }
+  100% {
+    stroke-dashoffset: 152;
+  }
+}

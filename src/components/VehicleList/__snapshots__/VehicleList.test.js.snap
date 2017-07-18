@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A Vehicle List Component should render without an error 1`] = `
+<div>
+  <div
+    id="xe"
+    media={
+      Array [
+        Object {
+          "name": "vehicle",
+          "url": "/images/xe_k17.jpg",
+        },
+      ]
+    }
+    modelYear="k17"
+    url="/api/vehicle/xe"
+  />
+  <div
+    id="xf"
+    media={
+      Array [
+        Object {
+          "name": "vehicle",
+          "url": "/images/xf_k17.jpg",
+        },
+      ]
+    }
+    modelYear="k17"
+    url="/api/vehicle/xf"
+  />
+  <div
+    id="xj"
+    media={
+      Array [
+        Object {
+          "name": "vehicle",
+          "url": "/images/xj_k16.jpg",
+        },
+      ]
+    }
+    modelYear="k16"
+    url="/api/vehicle/xj"
+  />
+  <div
+    id="fpace"
+    media={
+      Array [
+        Object {
+          "name": "vehicle",
+          "url": "/images/fpace_k17.jpg",
+        },
+      ]
+    }
+    modelYear="k17"
+    url="/api/vehicle/fpace"
+  />
+  <div
+    id="ftype"
+    media={
+      Array [
+        Object {
+          "name": "vehicle",
+          "url": "/images/ftype_k17.jpg",
+        },
+      ]
+    }
+    modelYear="k17"
+    url="/api/vehicle/ftype"
+  />
+</div>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A Vehicle Component should display the vehicle information when it is fetched 1`] = `
+<div
+  className="foo"
+  id="xe"
+  media={
+    Array [
+      Object {
+        "name": "vehicle",
+        "url": "/images/xe_k17.jpg",
+      },
+    ]
+  }
+  modelYear="k17"
+  url="/api/vehicle/xe"
+/>
+`;
+
+exports[`A Vehicle Component should render without an error 1`] = `<div />`;

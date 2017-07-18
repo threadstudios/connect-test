@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A Preloaded Image Component should display the image given it has loaded 1`] = `
+<div
+  className="foo"
+  url="https://www.jaguar.co.uk/Images/X540_72frame_turn_V03_Desktop_01_tcm91-387710_desktop_1366x768.jpg?v=2"
+/>
+`;
+
+exports[`A Preloaded Image Component should render without an error 1`] = `<div />`;

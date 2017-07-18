@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A Loading Component should render without an error 1`] = `
+<div>
+  <svg
+    height="120"
+    viewbox="0 0 1 1"
+    width="120"
+  >
+    <circle
+      cx="60"
+      cy="60"
+      fill="transparent"
+      r="30"
+      stroke="#EFEFEF"
+      stroke-width="9"
+    />
+    <circle
+      cx="60"
+      cy="60"
+      fill="transparent"
+      r="30"
+      stroke="#9e1b32"
+      stroke-width="9"
+    />
+  </svg>
+</div>
+`;

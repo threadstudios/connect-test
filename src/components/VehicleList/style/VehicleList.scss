@@ -1,0 +1,64 @@
+$border : 1px solid #EDEDED;
+
+.vehicle_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vehicle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 25%;
+    @include breakpoint($medium) {
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        border-bottom: $border;
+        align-content: flex-start;
+        .vehicle_description {
+            border-right: $border;
+        }
+        &:nth-child(even) .vehicle_description {
+            border-right: none;
+        }
+    }
+    @include breakpoint($large) {
+        width: 25%;
+        &:nth-child(1n) .vehicle_description {
+            border-right: $border;
+        }
+        &:nth-child(4n) .vehicle_description {
+            border-right: none;
+        }
+    }
+}
+
+.vehicle_image {
+    width: 22%;
+    min-width: 22%;
+    height: auto;
+    text-align: center;
+    @include breakpoint($medium) {
+        width: 100%;
+        min-width: 100%;
+        height: 33%;
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.vehicle_description {
+    border-bottom: $border;
+    text-align: left;
+    padding: 16px 24px;
+    @include breakpoint($medium) {
+        text-align: center;
+        border-bottom: none;
+        border-right: none;
+        width: 100%;
+    }
+}

@@ -10,12 +10,13 @@ const app = express();
 app.set('port', process.env.PORT || 3123);
 
 app.use(express.static('public'));
+app.use('/images', express.static('node_modules/technical-test/images'));
 
-app.use('/api', vehiclesApi);
+app.use('/', vehiclesApi);
 
 app.get('/', (req, res) => {
 
-    const app = InfernoServer.renderToString(<App />);
+    const app = InfernoServer.renderToString(<App {...req.store} />);
 
     res.send(`
         <html>
@@ -29,7 +30,12 @@ app.get('/', (req, res) => {
                 <div id="content">
                     ${app}
                 </div>
+                <script>
+                __PROPS__ = ${JSON.stringify(req.store)};
+                __CONFIG__ = {API_URL : "${process.env.API_URL}"};</script>
                 <script src="client.js"></script>
+                <script src="https://use.typekit.net/ard1xmg.js"></script>
+                <script>try{Typekit.load({ async: true });}catch(e){}</script>
             </body>
         </html>
     `);
